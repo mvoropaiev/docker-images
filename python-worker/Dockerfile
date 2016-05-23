@@ -22,7 +22,9 @@ RUN set -ex \
         openssh-client \
         postgresql-dev \
         su-exec \
-        tini
+    && apk add --no-cache \
+        --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/ \
+            tini
 
 # install gunicorn
 RUN set -ex \
