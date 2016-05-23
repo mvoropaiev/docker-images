@@ -20,7 +20,9 @@ RUN set -ex \
         libffi-dev \
         make \
         openssh-client \
-        postgresql-dev
+        postgresql-dev \
+        su-exec \
+        tini
 
 # install gunicorn
 RUN set -ex \
